@@ -2,15 +2,14 @@
 
 source 'https://rubygems.org'
 
-plugin 'diffend'
-
 gemspec
 
+gem 'waterdrop', git: 'https://github.com/yanadhiwiranata/waterdrop.git', branch: 'master'
 # Karafka gem does not require this but we add it here so we can test the integration with
 # ActiveJob much easier
-group :integrations do
-  gem 'activejob'
-end
+# group :integrations do
+#   gem 'activejob'
+# end
 
 group :test do
   gem 'byebug'
